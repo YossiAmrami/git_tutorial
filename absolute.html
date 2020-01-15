@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+    body {
+    width: 500px;
+    margin: 0 auto;
+    }
+    div{
+        border:  black 5px solid;
+    }
+    p {
+    background: aqua;
+    border: 3px solid blue;
+    padding: 10px;
+    margin: 10px;
+    }
+
+    span {
+    background: red;
+    border: 1px solid black;
+    }
+
+    #one {
+        position: fixed;
+        top: 80px;
+        left: 10px;
+        background: blue;
+        }
+
+    .positioned {
+    position: absolute;
+    background: yellow;
+    top: 0px;
+    left: 0px;
+    }
+    </style>
+
+</head>
+<body>
+    <h1>Absolute positioning</h1>
+
+    <p>I am a basic block level element. My adjacent block level elements sit on new lines below me.</p>
+    <div id="one">
+        <div>
+            <div>
+                <div>
+
+                    <p class="positioned">By default we span 100% of the width of our parent element, and we are as tall as our child content. Our total width and height is our content + padding + border width/height.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>We are separated by our margins. Because of margin collapsing, we are separated by the width of one of our margins, not both.</p>
+
+    <p>inline elements <span>like this one</span> and <span>this one</span> sit on the same line as one another,
+</body>
+</html>
+
